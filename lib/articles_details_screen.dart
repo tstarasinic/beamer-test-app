@@ -21,7 +21,7 @@ class ArticleDetailsScreen extends StatelessWidget {
             onPressed: () {
               Beamer.of(context).beamToNamed('/authors/${article['id']!}');
             },
-            child: Text('To author:${article['author']!}'),
+            child: Text('To author: ${article['author']!}'),
           )
         ],
       ),
