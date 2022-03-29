@@ -14,24 +14,28 @@ class _HomeScreenState extends State<HomeScreen> {
   final _beamerDelegates = [
     BeamerDelegate(
       initialPath: InnerBeamLocation.booksPath,
+      initializeFromParent: false,
       locationBuilder: BeamerLocationBuilder(
         beamLocations: [InnerBeamLocation(InnerBeamLocation.booksPath)],
       ),
     ),
     BeamerDelegate(
       initialPath: InnerBeamLocation.articlesPath,
+      initializeFromParent: false,
       locationBuilder: BeamerLocationBuilder(
         beamLocations: [InnerBeamLocation(InnerBeamLocation.articlesPath)],
       ),
     ),
     BeamerDelegate(
       initialPath: InnerBeamLocation.authorsPath,
+      initializeFromParent: false,
       locationBuilder: BeamerLocationBuilder(
         beamLocations: [InnerBeamLocation(InnerBeamLocation.authorsPath)],
       ),
     ),
     BeamerDelegate(
       initialPath: InnerBeamLocation.settingsPath,
+      initializeFromParent: false,
       locationBuilder: BeamerLocationBuilder(
         beamLocations: [InnerBeamLocation(InnerBeamLocation.settingsPath)],
       ),
