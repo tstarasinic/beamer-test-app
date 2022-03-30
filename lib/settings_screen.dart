@@ -1,3 +1,4 @@
+import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
 
 class SettingsScreen extends StatelessWidget {
@@ -7,10 +8,18 @@ class SettingsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Settings'),
+        title: const Text('Settings'),
       ),
-      body: Container(
-        child: const Text("Settings PAGE"),
+      body: Column(
+        children: [
+          const Text("Settings PAGE"),
+          TextButton(
+            onPressed: () {
+              Beamer.of(context, root: true).beamToNamed('/upper');
+            },
+            child: const Text('Beam to upper page'),
+          )
+        ],
       ),
     );
   }

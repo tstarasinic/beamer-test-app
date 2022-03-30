@@ -25,7 +25,7 @@ class AuthorDetailsScreen extends StatelessWidget {
                 if (int.parse(author['id']!) < 4) {
                   Beamer.of(context).beamToNamed('/books/${author['id']!}');
                 } else {
-                  Beamer.of(context).beamToNamed('/article/${author['id']!}');
+                  Beamer.of(context).beamToNamed('/articles/${author['id']!}');
                 }
               },
               child: Text('To Book: ${author['title']!}'),
